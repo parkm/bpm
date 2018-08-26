@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+body {
+  font-family: arial;
+  background: #2b2b2b;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+div {
+  display: block;
+}
+
+#ui {
+  pointer-events: none;
+  width: 640px;
+  height: 960px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". . tr"
+    ". center ."
+    "bl . .";
+}
+
+#b1 {
+  grid-area: center;
+  pointer-events: auto;
+}
+
+#b2 {
+  grid-area: tr;
+}
+
+#b3 {
+  grid-area: bl;
+}
